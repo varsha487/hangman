@@ -3,7 +3,6 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.*; 
 import java.io.*;
-import javax.swing.Timer;
 
 public class DriverProj
 {
@@ -16,8 +15,6 @@ public class DriverProj
       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       frame.setContentPane(new StartPanel());
       frame.setVisible(true);
-     
-      
    }
    public static class HangmanPanel extends JPanel 
    {
@@ -35,19 +32,13 @@ public class DriverProj
       
          buttons = new ButtonPanel();
          add(buttons, BorderLayout.SOUTH);
-         
-         
       }
-      
-      
-      
+
       public int getSeconds()
       {
          return mySeconds;
       }
-      
-      
-      
+
    }
    public static class WordPanel extends JPanel
    {
@@ -72,8 +63,7 @@ public class DriverProj
             
          }
          setBlank();
-               
-         
+ 
       }
       public void setBlank()
       {
